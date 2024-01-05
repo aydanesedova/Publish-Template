@@ -1,0 +1,902 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    .publishNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 129px;
+        width: 100%;
+        border-bottom: 1px solid #F1F1F1;
+
+        .socialMedia {
+            min-height: 129px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            i {
+                border: 1px solid #F1F1F1;
+                border-radius: 50%;
+                font-size: 17px;
+                width: 11%;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #4d4d4d;
+                transition: 0.4s ease;
+                cursor: pointer;
+
+                &:hover {
+                    border: none;
+                    background-color: #95ADBE;
+                    color: #fff;
+                }
+            }
+        }
+
+        .publishCompany {
+            min-height: 129px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h2 {
+                font-family: Lora, serif;
+                font-size: 20px;
+                font-weight: 900px;
+                line-height: 26px;
+
+                span {
+                    color: #ff7a5c;
+                    font-family: Lora, serif;
+                    font-size: 20px;
+                    font-weight: 700px;
+                    line-height: 26px;
+                }
+            }
+
+            p {
+                font-family: Lora, serif;
+                font-size: 13px;
+                font-weight: 500px;
+                line-height: 16px;
+                color: rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .search {
+            min-height: 129px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .searchInp {
+                min-height: 52px;
+                min-width: 300px;
+                border-radius: 30px;
+                background-color: #EFEFEF;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+
+                #inp {
+                    width: 80%;
+                    min-height: 40px;
+                    border: transparent;
+                    background-color: transparent;
+                    margin-left: 10px;
+
+                    &::placeholder {
+                        font-family: Roboto, Arial, sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.7);
+                    }
+                }
+
+                #btn {
+                    background-color: #95ADBE;
+                    border-top-right-radius: 30px;
+                    width: 20%;
+                    min-height: 52px;
+                    border: none;
+                    color: #fff;
+                    border-bottom-right-radius: 30px;
+
+                }
+            }
+        }
+    }
+
+    .publish {
+        width: 100%;
+        min-height: 71px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .publishContainer {
+            width: 58%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .publishList {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                li {
+                    a {
+                        font-family: Lora, serif;
+                        font-size: 13px;
+                        color: #000;
+                        font-weight: 500;
+                        transition: 0.4s ease;
+
+                        &:hover {
+                            color: #95adbe;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#goodBooks {
+    min-height: 700px;
+    width: 100%;
+    background-image: url(/assets/images/bg_1.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .goodBooksTxt {
+        width: 100%;
+        min-height: 700px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            font-family: Lora, serif;
+            font-size: 60px;
+            color: #000;
+            font-weight: 600;
+            width: 70%;
+            position: relative;
+
+        }
+
+        p {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.8);
+            line-height: 27px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        div {
+            display: flex;
+            gap: 5px;
+
+            .view {
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 15px;
+                color: #fff;
+                line-height: 27px;
+                font-weight: 500;
+                min-width: 150px;
+                min-height: 57px;
+                border: none;
+                border-radius: 5px;
+                background-color: #95ADBE;
+            }
+
+            .explore {
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 15px;
+                color: #111;
+                line-height: 27px;
+                font-weight: 700;
+                min-width: 150px;
+                min-height: 57px;
+                border: none;
+                border-radius: 5px;
+                background-color: #fff;
+            }
+        }
+    }
+
+    .all {
+        .booksTypeTxt {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            top: 810px;
+            width: 20%;
+
+            i {
+                width: 170px;
+                min-height: 170px;
+                border-radius: 50%;
+                font-size: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #f5f4f0;
+
+                &:hover {
+                    background-color: #95ADBE;
+                    transition: 0.5s ease;
+                }
+            }
+
+            h2 {
+                font-family: Lora, serif;
+                font-size: 24px;
+                color: #000;
+                font-weight: 600;
+                line-height: 36px;
+                min-height: 40px;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+            }
+
+            p {
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 17px;
+                color: #111;
+                line-height: 31px;
+                font-weight: 400;
+                color: #808080;
+                text-align: center;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    #goodBooks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: #95ADBE;
+        position: relative;
+
+        .goodBooksTxt {
+            h2 {
+                font-size: 50px;
+            }
+        }
+
+        .children {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width:1064px) {
+    #goodBooks {
+        .goodBooksTxt {
+            h2 {
+                font-size: 45px;
+            }
+        }
+
+        .children {
+            .booksTypeTxt {
+                h2 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    #goodBooks {
+        .goodBooksTxt {
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .children {
+            .booksTypeTxt {
+                h2 {
+                    display: none;
+                }
+
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:968px) {
+    #goodBooks {
+        .children {
+            .booksTypeTxt {
+                i {
+                    font-size: 20px;
+                    width: 100px;
+                    min-height: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    #goodBooks {
+        .children {
+            .booksTypeTxt {
+                h2 {
+                    display: none;
+                }
+
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:448px) {
+    #goodBooks {
+        .goodBooksTxt {
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .children {
+            .booksTypeTxt {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 300px;
+
+                i {
+                    font-size: 15px;
+                    width: 70px;
+                    min-height: 70px;
+                }
+            }
+        }
+    }
+}
+
+
+#newRelease {
+    min-height: 1203px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .newReleaseTxt {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+        min-height: 400px;
+        width: 100%;
+
+        span {
+            color: #ff7a5c;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 31px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-family: Lora, serif;
+            font-size: 50px;
+            color: #000;
+            font-weight: 500;
+            line-height: 75px;
+        }
+    }
+
+    #productsAll {
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .miniDiv {
+            width: 33%;
+            min-height: 350px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                width: 95%;
+
+            }
+
+            h2 {
+                color: #141517;
+                font-size: 22px;
+                font-weight: 700;
+                font-family: poppins;
+            }
+
+            button {
+                background-color: #141517;
+                font-size: 14px;
+                line-height: 57px;
+                color: #fff;
+                font-weight: 700;
+                border: none;
+                transition: 0.5s ease;
+                width: 25%;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background-color: transparent;
+                    color: #141517;
+                    border: 1px solid #141517;
+                }
+            }
+        }
+    }
+
+    .loadMore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 150px;
+
+        #loadMore {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 15px;
+            color: #fff;
+            line-height: 27px;
+            font-weight: 500;
+            min-width: 180px;
+            min-height: 57px;
+            border: none;
+            border-radius: 5px;
+            background-color: #95ADBE;
+        }
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    #newRelease {
+        .newReleaseTxt {
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    #newRelease {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+
+        #productsAll {
+            flex-wrap: wrap;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .miniDiv {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 60%;
+                }
+
+                button {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
+
+#kindWorld {
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/images/bg_4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    .kindWorldTxt {
+        min-height: 400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        span {
+            color: rgba(255, 255, 255, 0.9);
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-family: Lora, serif;
+            font-size: 50px;
+            color: #fff;
+            font-weight: 500;
+            line-height: 75px;
+        }
+    }
+
+
+    .marketingManagerTxt {
+        background-color: #fff;
+        border-radius: 10px;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 300px;
+        width: 25%;
+        background-color: #fff;
+
+        .far {
+            width: 95%;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 31px;
+            font-weight: 500;
+            min-height: 100px;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            color: #808080;
+        }
+
+        .rogerScott {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            img {
+                border-radius: 50%;
+                height: 80px;
+                min-width: 80px;
+            }
+
+            h2 {
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 20px;
+                line-height: 36px;
+                font-weight: 600;
+                color: #000000;
+            }
+
+            .manager {
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 16px;
+                line-height: 29px;
+                font-weight: 500;
+                color: #4d4d4d;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    #kindWorld {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .marketingManagerTxt {
+            width: 30%;
+
+            .far {
+                font-size: 12px;
+            }
+
+            .rogerScott {
+                div {
+                    h2 {
+                        font-size: 15px;
+                    }
+
+                    .manager {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    #kindWorld {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .kindWorld {
+            .kindWorldTxt {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+
+            .marketingManagerTxt {
+                width: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .far {
+                    font-size: 12px;
+                }
+
+                .rogerScott {
+                    div {
+                        h2 {
+                            font-size: 15px;
+                        }
+
+                        .manager {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:552px) {
+    #kindWorld {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .kindWorld {
+            .kindWorldTxt {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+
+            .marketingManagerTxt {
+
+                display: none;
+            }
+        }
+    }
+
+}
+
+#recentBlog {
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .recentBlogTxt {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: column;
+
+        span {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 31px;
+            font-weight: 600;
+            color: #ff7a5c;
+        }
+
+        h2 {
+            font-family: Lora, serif;
+            font-size: 50px;
+            color: #000;
+            font-weight: 500;
+            line-height: 75px;
+            min-height: 100px;
+        }
+    }
+
+    .newFriend {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+
+        img {
+            width: 100%;
+
+        }
+
+        .friend {
+            font-family: Lora, serif;
+            font-size: 20px;
+            color: #000;
+            font-weight: 500;
+            line-height: 30px;
+            min-height: 100px;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+
+        p {
+            text-align: center;
+            width: 90%;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 17px;
+            color: #111;
+            line-height: 31px;
+            font-weight: 400;
+            color: #808080;
+        }
+
+        .month {
+            background-color: #EFEFEF;
+            height: 100px;
+            min-width: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            top: 180px;
+
+            h1 {
+                font-family: Lora, serif;
+                font-size: 30px;
+                color: #95adbe;
+                font-weight: 700;
+            }
+
+            h2 {
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: #000;
+            }
+
+            span {
+                color: rgba(0, 0, 0, 0.2);
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 11px;
+                font-weight: 400;
+            }
+
+            &:hover {
+                background-color: #95ADBE;
+                transition: 0.5s ease;
+                cursor: pointer;
+
+                h1 {
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}
+@media screen and (max-width:1199px) {
+    #recentBlog{
+       .newFriend{
+        .month{
+            display: none;
+        }
+       } 
+    }
+}
+
+footer {
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    .copyright {
+        min-height: 125px;
+        width: 100%;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            color: rgba(255, 255, 255, 0.5);
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+
+            span {
+                color: #fff;
+                cursor: pointer;
+                transition: 0.5s ease;
+
+                &:hover {
+
+                    color: #95ADBE;
+                }
+            }
+        }
+    }
+}

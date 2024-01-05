@@ -1,0 +1,720 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .publishNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 129px;
+  width: 100%;
+  border-bottom: 1px solid #F1F1F1;
+}
+header .publishNav .socialMedia {
+  min-height: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+header .publishNav .socialMedia i {
+  border: 1px solid #F1F1F1;
+  border-radius: 50%;
+  font-size: 17px;
+  width: 11%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4d4d4d;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+header .publishNav .socialMedia i:hover {
+  border: none;
+  background-color: #95ADBE;
+  color: #fff;
+}
+header .publishNav .publishCompany {
+  min-height: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .publishNav .publishCompany h2 {
+  font-family: Lora, serif;
+  font-size: 20px;
+  font-weight: 900px;
+  line-height: 26px;
+}
+header .publishNav .publishCompany h2 span {
+  color: #ff7a5c;
+  font-family: Lora, serif;
+  font-size: 20px;
+  font-weight: 700px;
+  line-height: 26px;
+}
+header .publishNav .publishCompany p {
+  font-family: Lora, serif;
+  font-size: 13px;
+  font-weight: 500px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+header .publishNav .search {
+  min-height: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .publishNav .search .searchInp {
+  min-height: 52px;
+  min-width: 300px;
+  border-radius: 30px;
+  background-color: #EFEFEF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .publishNav .search .searchInp #inp {
+  width: 80%;
+  min-height: 40px;
+  border: transparent;
+  background-color: transparent;
+  margin-left: 10px;
+}
+header .publishNav .search .searchInp #inp::placeholder {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+header .publishNav .search .searchInp #btn {
+  background-color: #95ADBE;
+  border-top-right-radius: 30px;
+  width: 20%;
+  min-height: 52px;
+  border: none;
+  color: #fff;
+  border-bottom-right-radius: 30px;
+}
+header .publish {
+  width: 100%;
+  min-height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .publish .publishContainer {
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .publish .publishContainer .publishList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .publish .publishContainer .publishList li a {
+  font-family: Lora, serif;
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+header .publish .publishContainer .publishList li a:hover {
+  color: #95adbe;
+}
+
+#goodBooks {
+  min-height: 700px;
+  width: 100%;
+  background-image: url(/assets/images/bg_1.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#goodBooks .goodBooksTxt {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#goodBooks .goodBooksTxt h2 {
+  font-family: Lora, serif;
+  font-size: 60px;
+  color: #000;
+  font-weight: 600;
+  width: 70%;
+  position: relative;
+}
+#goodBooks .goodBooksTxt p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 27px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+#goodBooks .goodBooksTxt div {
+  display: flex;
+  gap: 5px;
+}
+#goodBooks .goodBooksTxt div .view {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  line-height: 27px;
+  font-weight: 500;
+  min-width: 150px;
+  min-height: 57px;
+  border: none;
+  border-radius: 5px;
+  background-color: #95ADBE;
+}
+#goodBooks .goodBooksTxt div .explore {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15px;
+  color: #111;
+  line-height: 27px;
+  font-weight: 700;
+  min-width: 150px;
+  min-height: 57px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#goodBooks .all .booksTypeTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 810px;
+  width: 20%;
+}
+#goodBooks .all .booksTypeTxt i {
+  width: 170px;
+  min-height: 170px;
+  border-radius: 50%;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4f0;
+}
+#goodBooks .all .booksTypeTxt i:hover {
+  background-color: #95ADBE;
+  transition: 0.5s ease;
+}
+#goodBooks .all .booksTypeTxt h2 {
+  font-family: Lora, serif;
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  line-height: 36px;
+  min-height: 40px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+#goodBooks .all .booksTypeTxt p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 17px;
+  color: #111;
+  line-height: 31px;
+  font-weight: 400;
+  color: #808080;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  #goodBooks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #95ADBE;
+    position: relative;
+  }
+  #goodBooks .goodBooksTxt h2 {
+    font-size: 50px;
+  }
+  #goodBooks .children {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1064px) {
+  #goodBooks .goodBooksTxt h2 {
+    font-size: 45px;
+  }
+  #goodBooks .children .booksTypeTxt h2 {
+    font-size: 20px;
+  }
+  #goodBooks .children .booksTypeTxt p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #goodBooks .goodBooksTxt h2 {
+    font-size: 40px;
+  }
+  #goodBooks .goodBooksTxt p {
+    font-size: 12px;
+  }
+  #goodBooks .children .booksTypeTxt h2 {
+    display: none;
+  }
+  #goodBooks .children .booksTypeTxt p {
+    display: none;
+  }
+}
+@media screen and (max-width: 968px) {
+  #goodBooks .children .booksTypeTxt i {
+    font-size: 20px;
+    width: 100px;
+    min-height: 100px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #goodBooks .children .booksTypeTxt h2 {
+    display: none;
+  }
+  #goodBooks .children .booksTypeTxt p {
+    display: none;
+  }
+}
+@media screen and (max-width: 448px) {
+  #goodBooks .goodBooksTxt h2 {
+    font-size: 20px;
+  }
+  #goodBooks .goodBooksTxt p {
+    font-size: 12px;
+  }
+  #goodBooks .children .booksTypeTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+  }
+  #goodBooks .children .booksTypeTxt i {
+    font-size: 15px;
+    width: 70px;
+    min-height: 70px;
+  }
+}
+#newRelease {
+  min-height: 1203px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#newRelease .newReleaseTxt {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  min-height: 400px;
+  width: 100%;
+}
+#newRelease .newReleaseTxt span {
+  color: #ff7a5c;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 31px;
+  font-weight: 600;
+}
+#newRelease .newReleaseTxt h2 {
+  font-family: Lora, serif;
+  font-size: 50px;
+  color: #000;
+  font-weight: 500;
+  line-height: 75px;
+}
+#newRelease #productsAll {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#newRelease #productsAll .miniDiv {
+  width: 33%;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#newRelease #productsAll .miniDiv img {
+  width: 95%;
+}
+#newRelease #productsAll .miniDiv h2 {
+  color: #141517;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: poppins;
+}
+#newRelease #productsAll .miniDiv button {
+  background-color: #141517;
+  font-size: 14px;
+  line-height: 57px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  transition: 0.5s ease;
+  width: 25%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#newRelease #productsAll .miniDiv button:hover {
+  background-color: transparent;
+  color: #141517;
+  border: 1px solid #141517;
+}
+#newRelease .loadMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+#newRelease .loadMore #loadMore {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  line-height: 27px;
+  font-weight: 500;
+  min-width: 180px;
+  min-height: 57px;
+  border: none;
+  border-radius: 5px;
+  background-color: #95ADBE;
+}
+
+@media screen and (max-width: 1200px) {
+  #newRelease .newReleaseTxt {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  #newRelease {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  #newRelease #productsAll {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #newRelease #productsAll .miniDiv {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #newRelease #productsAll .miniDiv img {
+    width: 60%;
+  }
+  #newRelease #productsAll .miniDiv button {
+    font-size: 9px;
+  }
+}
+#kindWorld {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/images/bg_4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#kindWorld .kindWorldTxt {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#kindWorld .kindWorldTxt span {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 500;
+}
+#kindWorld .kindWorldTxt h2 {
+  font-family: Lora, serif;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 75px;
+}
+#kindWorld .marketingManagerTxt {
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 300px;
+  width: 25%;
+  background-color: #fff;
+}
+#kindWorld .marketingManagerTxt .far {
+  width: 95%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 31px;
+  font-weight: 500;
+  min-height: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: #808080;
+}
+#kindWorld .marketingManagerTxt .rogerScott {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#kindWorld .marketingManagerTxt .rogerScott img {
+  border-radius: 50%;
+  height: 80px;
+  min-width: 80px;
+}
+#kindWorld .marketingManagerTxt .rogerScott h2 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #000000;
+}
+#kindWorld .marketingManagerTxt .rogerScott .manager {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 29px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+@media screen and (max-width: 991px) {
+  #kindWorld {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #kindWorld .marketingManagerTxt {
+    width: 30%;
+  }
+  #kindWorld .marketingManagerTxt .far {
+    font-size: 12px;
+  }
+  #kindWorld .marketingManagerTxt .rogerScott div h2 {
+    font-size: 15px;
+  }
+  #kindWorld .marketingManagerTxt .rogerScott div .manager {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #kindWorld {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #kindWorld .kindWorld .kindWorldTxt h2 {
+    font-size: 30px;
+  }
+  #kindWorld .kindWorld .marketingManagerTxt {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #kindWorld .kindWorld .marketingManagerTxt .far {
+    font-size: 12px;
+  }
+  #kindWorld .kindWorld .marketingManagerTxt .rogerScott div h2 {
+    font-size: 15px;
+  }
+  #kindWorld .kindWorld .marketingManagerTxt .rogerScott div .manager {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 552px) {
+  #kindWorld {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #kindWorld .kindWorld .kindWorldTxt h2 {
+    font-size: 20px;
+  }
+  #kindWorld .kindWorld .marketingManagerTxt {
+    display: none;
+  }
+}
+#recentBlog {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#recentBlog .recentBlogTxt {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+#recentBlog .recentBlogTxt span {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 31px;
+  font-weight: 600;
+  color: #ff7a5c;
+}
+#recentBlog .recentBlogTxt h2 {
+  font-family: Lora, serif;
+  font-size: 50px;
+  color: #000;
+  font-weight: 500;
+  line-height: 75px;
+  min-height: 100px;
+}
+#recentBlog .newFriend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+#recentBlog .newFriend img {
+  width: 100%;
+}
+#recentBlog .newFriend .friend {
+  font-family: Lora, serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  line-height: 30px;
+  min-height: 100px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+#recentBlog .newFriend p {
+  text-align: center;
+  width: 90%;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 17px;
+  color: #111;
+  line-height: 31px;
+  font-weight: 400;
+  color: #808080;
+}
+#recentBlog .newFriend .month {
+  background-color: #EFEFEF;
+  height: 100px;
+  min-width: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 180px;
+}
+#recentBlog .newFriend .month h1 {
+  font-family: Lora, serif;
+  font-size: 30px;
+  color: #95adbe;
+  font-weight: 700;
+}
+#recentBlog .newFriend .month h2 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+#recentBlog .newFriend .month span {
+  color: rgba(0, 0, 0, 0.2);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+#recentBlog .newFriend .month:hover {
+  background-color: #95ADBE;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#recentBlog .newFriend .month:hover h1 {
+  color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+  #recentBlog .newFriend .month {
+    display: none;
+  }
+}
+footer {
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+footer .copyright {
+  min-height: 125px;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .copyright p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .copyright p span {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+footer .copyright p span:hover {
+  color: #95ADBE;
+}
